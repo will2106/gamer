@@ -17,24 +17,24 @@
             <div class="layout-grid">
                 <div class="contatos">
                     <div class="phone">
-                        <img src="./assets/icones/icone_telefone.svg" alt="Ícone de telefone">
+                        <img src="./assets/icons/icone_telefone.svg" alt="Ícone de telefone">
                         <span>(11) 0900-1010</span>
                     </div>
                     <div class="email">
-                        <img src="./assets/icones/icone_email.svg" alt="Ícone de e-mail">
+                        <img src="./assets/icons/icone_email.svg" alt="Ícone de e-mail">
                         <span>contato@gamer.com.br</span>
                     </div>
                 </div>
 
                 <div class="midias-sociais">
                     <a href="">
-                        <img src="./assets/icones/icone facebook.svg" alt="Imagem link do Facebook da empresa Gamer">
+                        <img src="./assets/icons/facebook.svg" alt="Imagem link do Facebook da empresa Gamer">
                     </a>
                     <a href="">
-                        <img src="./assets/icones/icone linkedin.svg" alt="Imagem link do Linkedin da empresa Gamer">
+                        <img src="./assets/icons/linkedin.svg" alt="Imagem link do Linkedin da empresa Gamer">
                     </a>
                     <a href="">
-                        <img src="./assets/icones/icone isntagram.svg" alt="Imagem link do Instagram da empresa Gamer">
+                        <img src="./assets/icons/intagram.svg" alt="Imagem link do Instagram da empresa Gamer">
                     </a>
                 </div>
             </div>
@@ -43,7 +43,7 @@
         <div class="header-bottom">
             <div class="layout-grid alinhamento-between-center">
                 <!-- menu hamburger -->
-                <img src="./assets/icones/menu-pontinhos.svg" class="menu-hamburger"
+                <img onclick="mostrarMenu()" src="assets/icones/hamburguer.svg" class="menu-hamburger"
                     alt="Ícone para abrir e fechar o menu de celular">
 
                 <img class="logo" src="./assets/icones/logotipo-gamer.svg"
@@ -57,18 +57,18 @@
 
                     <!-- visível apenas no mobile -->
 
-                    <div class="phone">
-                        <img src="./assets/icones/icone_telefone.svg" alt="Ícone de telefone">
+                    <a class="phone">
+                        <img src="./assets/icones/icone_telefone.svg" alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
                         <span>(11) 0900-1010</span>
-                    </div>
-                    <div class="email">
-                        <img src="./assets/icones/icone_telefone.svg" alt="Ícone de e-mail">
+                    </a>
+                    <a class="email">
+                        <img src="./assets/icones/icone_email.svg" alt="Ícone de e-mail">
                         <span>contato@gamer.com.br</span>
-                    </div>
+                    </a>
 
                     <div class="midias-sociais">
                         <a href="">
-                            <img src="./assets/icones/icone facebook.svg" alt="Imagem link do Facebook da empresa Gamer">
+                            <img src="assets/icones/icone facebook.svg" alt="Imagem link do Facebook da empresa Gamer">
                         </a>
                         <a href="">
                             <img src="./assets/icones/icone linkedin.svg" alt="Imagem link do Linkedin da empresa Gamer">
@@ -97,7 +97,13 @@
             </div>
         </div>
     </header>
+<script>
+function mostrarMenu() {
+    alert("Bora Abrir o Menu")
 
+}
+
+</script>
 </body>
 
 </html>
