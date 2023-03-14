@@ -1,3 +1,4 @@
+
 /* imports das fontes */
 
 /* TITILLIUM WEB */
@@ -23,8 +24,20 @@ body {
 }
 
 /* Classes genéricas */
+.mostrar-menu {
+    left: 0 !important;
+}
+.mostrar-Perfil{
+
+    right: 0 !important;
+}
+
+
+
+
 .layout-grid {
-  
+   
+   /* border: 1px solid salmon;*/
     width: 90%;
     height: 100%;
     margin: 0 auto;
@@ -43,6 +56,7 @@ body {
 header {
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 20;
     width: 100vw;
     height: 60px;
@@ -78,6 +92,10 @@ header .header-bottom nav {
     padding-bottom: 20px;
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
+    transition: left 0.4s ;
+
+
+
 }
 
 /* somente links "filhos diretos" */
@@ -96,18 +114,69 @@ header .header-bottom nav > a:last-of-type {
     border-bottom: none;
 }
 
+/* ícone de mídias sociais possibilidade position 
+header .header-bottom nav .midias-sociais {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 100px);
+    border: 1px solid red;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
 
-header .header-bottom nav .midias-sociais{
-/*gap e o espacamento entre os elementos, funciona em linha e tambem em coluna*/
-display: flex;
-justify-content: center;
-gap: 50px;
-
+header .header-bottom nav .midias-sociais {
+    
+   /* border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    /* gap é o espaçamento entre os elementos, funciona em linha e também em coluna. */
+    gap: 50px;
 }
 
 /* menu lateral direito - ícones */
 header .header-bottom .menu-usuarios {
-    display: none;
+    position: fixed;
+    top: 60px;
+    right: -19vw;
+    width: 19vw;
+    height: 170px;
+    transition: right 0.4s ;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+
+
+
 }
 
+main{
 
+    margin-top: 60px;
+}
+
+.banner {
+
+    width: 100%;
+    height: 606px;
+    background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+
+.banner h1{
+
+
+    
+}
